@@ -9,9 +9,9 @@ module TimeSugar
 end
 
 class Fixnum
-  %w(SECOND MINUTE HOUR DAY WEEK).each do |verb|
-    define_method(verb.downcase) { self * TimeSugar.const_get(verb) }
-    alias_method "#{verb.downcase}s", verb.downcase
+  %w(SECOND MINUTE HOUR DAY WEEK).each do |const|
+    define_method(const.downcase) { self * TimeSugar.const_get(const) }
+    alias_method "#{const.downcase}s", const.downcase
   end
 
   def ago
