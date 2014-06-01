@@ -19,7 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 1.5'
-  spec.add_development_dependency 'coveralls'
-  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'codeclimate-test-reporter'
+  spec.add_development_dependency 'mocoso'
+  spec.add_development_dependency 'oktobertest'
   spec.add_development_dependency 'rake'
 end
