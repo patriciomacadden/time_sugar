@@ -1,5 +1,5 @@
 module TimeSugar
-  VERSION = '0.0.1'
+  VERSION = '0.1.0'
 
   SECOND = 1
   MINUTE = SECOND * 60
